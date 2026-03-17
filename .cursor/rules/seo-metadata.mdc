@@ -1,0 +1,44 @@
+---
+description: SEO requirements - metadata, JSON-LD, sitemap, robots
+globs: "{app/**/page.tsx,app/sitemap.ts,app/robots.ts,lib/seo/**}"
+alwaysApply: false
+---
+
+# SEO Requirements
+
+## Page Metadata
+
+Every page must export `generateMetadata()` with:
+- `title`, `description`, canonical URL
+- OpenGraph (`og:title`, `og:description`, `og:image`)
+
+```typescript
+// app/(pages)/about/page.tsx
+import { aboutPageData } from "@/lib/data/pages/about";
+
+export function generateMetadata(): Metadata {
+  const { seo } = aboutPageData;
+  return {
+    title: seo.metaTitle,
+    description: seo.metaDescription,
+    openGraph: { title: seo.metaTitle, description: seo.metaDescription, images: seo.ogImageUrl ? [seo.ogImageUrl] : [] },
+    alternates: { canonical: `/${seo.slug}` },
+  };
+}
+```
+
+## JSON-LD Structured Data
+
+- Create reusable helpers in `lib/seo/jsonld.ts`
+- Use schema.org types: `Organization`, `WebPage`, `FAQPage`, `BreadcrumbList`
+- Include JSON-LD on all pages
+
+## Sitemap & Robots
+
+- Dynamic sitemap at `app/sitemap.ts`
+- Robots config at `app/robots.ts`
+
+## Never Skip
+
+- Never create a page without `generateMetadata()`
+- Never skip canonical URLs or OpenGraph data

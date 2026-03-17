@@ -1,0 +1,42 @@
+---
+description: Core Next.js architecture - App Router, Server Components, TypeScript strict mode, Tailwind v4
+alwaysApply: true
+---
+
+# Next.js Architecture
+
+- Use Next.js App Router with TypeScript strict mode
+- Use Tailwind CSS v4 for all styling
+- Default to Server Components; only use `"use client"` for forms, animations, or state management
+- Never hardcode content in components — all data must flow through props
+
+## File Organization
+
+```
+app/
+├── layout.tsx              (fonts, root metadata)
+├── page.tsx                (homepage)
+├── sitemap.ts              (dynamic sitemap)
+├── robots.ts               (robots config)
+├── (pages)/layout.tsx      (shared Header/Footer wrapper)
+└── api/forms/submit/route.ts
+
+components/
+├── [feature-name]/         (grouped by feature, e.g. components/service-detail/)
+└── ui/                     (shared reusable components)
+
+lib/
+├── data/                   (all content — easy CMS swap later)
+├── types/                  (TypeScript interfaces)
+└── seo/                    (metadata + JSON-LD helpers)
+```
+
+## Code Quality
+
+- Write semantic HTML (`nav`, `main`, `section`, `article`, `aside`)
+- Mobile-first responsive design (Tailwind: `sm:`, `md:`, `lg:`, `xl:`)
+- Proper TypeScript types — never use `any`
+- Graceful error handling with `try/catch` and fallbacks
+- ARIA labels for accessibility
+- Keep components under 200 lines; split if larger
+- kebab-case filenames, PascalCase components

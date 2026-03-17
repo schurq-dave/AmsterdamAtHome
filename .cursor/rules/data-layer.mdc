@@ -1,0 +1,58 @@
+---
+description: Data layer pattern - typed data in lib/data/, interfaces in lib/types/, props-only components
+globs: "{lib/data/**,lib/types/**,components/**,app/**}"
+alwaysApply: false
+---
+
+# Data Layer & Sanity Migration Path
+
+## Data Storage
+
+Store all content in `lib/data/` organized by type:
+
+```
+lib/data/
+├── site-config.ts
+├── navigation.ts
+├── pages/
+│   ├── home.ts
+│   └── about.ts
+└── content/
+    ├── services.ts
+    └── team.ts
+```
+
+## TypeScript Interfaces
+
+Define interfaces in `lib/types/` for every data structure. Every page data object must include:
+
+```typescript
+seo: {
+  metaTitle: string;
+  metaDescription: string;
+  slug: string;
+  keywords?: string[];
+  ogImageUrl?: string;
+}
+```
+
+Structure data objects to mirror future Sanity CMS schemas (nested objects, arrays, references).
+
+## Component Rules
+
+- Components are **pure presentational**: accept props → return JSX → no data fetching
+- Never import data directly in components — always receive via props
+- Never hardcode text/content in JSX
+
+## Page Rules
+
+- Pages import data from `lib/data/` and pass to components via props
+- Every page must export `generateMetadata()` using the page's SEO data
+
+## Sanity Migration
+
+Code is structured so migrating to Sanity only requires:
+
+1. Change page imports: `import { data } from '@/lib/data/page'` → `const data = await sanityFetch()`
+2. Components remain unchanged (already accept props)
+3. Types already match future Sanity schema structure

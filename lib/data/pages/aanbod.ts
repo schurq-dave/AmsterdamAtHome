@@ -1,0 +1,203 @@
+import type { SeoData, AanbodProperty, FilterOption } from "@/lib/types";
+
+export const aanbodPageSeo: SeoData = {
+  metaTitle: "Exclusief Woningaanbod Amsterdam",
+  metaDescription:
+    "Ontdek ons exclusieve woningaanbod in Amsterdam. Van grachtenpanden tot moderne appartementen in de populairste buurten.",
+  slug: "aanbod",
+  keywords: [
+    "woningaanbod amsterdam",
+    "huizen te koop amsterdam",
+    "koopwoningen amsterdam",
+    "exclusief woningaanbod",
+  ],
+};
+
+export const aanbodHeroData = {
+  label: "Exclusief Aanbod",
+  title: "Woningaanbod",
+  backgroundImage: "/images/aanbod-hero-new-3.png",
+  bgPositionClass: "bg-[center_30%]",
+};
+
+export const buurtFilters: FilterOption[] = [
+  { value: "alle", label: "Alle buurten" },
+  { value: "centrum", label: "Centrum" },
+  { value: "zuid", label: "Zuid" },
+  { value: "noord", label: "Noord" },
+  { value: "west", label: "West" },
+];
+
+export const prijsFilters: FilterOption[] = [
+  { value: "alle", label: "Alle prijsklassen" },
+  { value: "0-500000", label: "Tot € 500.000" },
+  { value: "500000-1000000", label: "€ 500.000 - € 1.000.000" },
+  { value: "1000000+", label: "Vanaf € 1.000.000" },
+];
+
+export const aanbodProperties: AanbodProperty[] = [
+  {
+    slug: "keizersgracht-402",
+    images: [
+      { src: "https://i.postimg.cc/MGF6PYKv/94614349_1920x1280.jpg", alt: "Keizersgracht 402" },
+      { src: "https://i.postimg.cc/pd6WGBXh/94614342_1920x1280.jpg", alt: "Interieur 1" },
+      { src: "https://i.postimg.cc/q75JbGMq/113723059.jpg", alt: "Interieur 2" },
+      { src: "https://i.postimg.cc/MGF6PYKv/94614349_1920x1280.jpg", alt: "Interieur 3" },
+      { src: "https://i.postimg.cc/pd6WGBXh/94614342_1920x1280.jpg", alt: "Interieur 4" },
+      { src: "https://i.postimg.cc/q75JbGMq/113723059.jpg", alt: "Interieur 5" },
+      { src: "https://i.postimg.cc/MGF6PYKv/94614349_1920x1280.jpg", alt: "Interieur 6" },
+      { src: "https://i.postimg.cc/pd6WGBXh/94614342_1920x1280.jpg", alt: "Interieur 7" },
+    ],
+    badge: { label: "Te Koop", variant: "light" },
+    badgePosition: "left",
+    neighborhood: "Amsterdam Centrum",
+    title: "Keizersgracht 402",
+    description:
+      "Een werkelijk uniek en licht dubbel benedenhuis met diepe tuin, gelegen op een van de mooiste stukjes van de grachtengordel.",
+    fullDescription: [
+      "Welkom op de Keizersgracht 402, een oase van rust en ruimte midden in het bruisende hart van Amsterdam. Dit luxueuze dubbele benedenhuis biedt het ultieme grachtengevoel in combinatie met modern wooncomfort.",
+      "Bij binnenkomst valt direct de imposante plafondhoogte op, geaccentueerd door originele ornamenten. De royale living aan de voorzijde biedt een adembenemend uitzicht over de gracht. Aan de achterzijde bevindt zich de op maat gemaakte woonkeuken, voorzien van hoogwaardige inbouwapparatuur en een prachtig kookeiland.",
+      "Via openslaande deuren bereikt u de indrukwekkende, architectonisch aangelegde achtertuin. Een ware zeldzaamheid in het centrum, waar u in alle privacy kunt genieten van de zon.",
+      "In het souterrain bevinden zich drie ruime slaapkamers en twee luxe afgewerkte badkamers. Dit is een buitenkans voor wie zoekt naar karakter, ruimte en absolute topklasse op een wereldberoemde locatie."
+    ],
+    energyLabel: "A",
+    constructionYear: "1671",
+    outdoorSpace: "Achtertuin (75 m²)",
+    features: [
+      "Eigen grond",
+      "Rijksmonument",
+      "Vloerverwarming door het gehele appartement",
+      "Luxe eikenhouten visgraatvloer",
+      "Actieve en gezonde VvE"
+    ],
+    area: "145 m²",
+    rooms: "5 Kamers",
+    price: "€ 1.250.000",
+    priceLabel: "k.k.",
+    filterBuurt: "centrum",
+    filterPrijs: "1000000+",
+    layout: "image-left",
+  },
+  {
+    slug: "van-baerlestraat-12",
+    images: [
+      { src: "https://i.postimg.cc/QMy84qxB/113723215_1920x1280.jpg", alt: "Van Baerlestraat 12" },
+      { src: "https://i.postimg.cc/Cxz1gQRt/203155789_1920x1281.jpg", alt: "Interieur 1" },
+      { src: "https://i.postimg.cc/wjmmq5T8/albertcuyp.jpg", alt: "Interieur 2" },
+    ],
+    badge: { label: "Nieuw", variant: "orange" },
+    badgePosition: "right",
+    neighborhood: "Amsterdam Oud-Zuid",
+    title: "Van Baerlestraat 12",
+    description:
+      "Sfeervol en hoogwaardig gerenoveerd appartement, letterlijk om de hoek van het Museumplein en het Vondelpark.",
+    area: "98 m²",
+    rooms: "3 Kamers",
+    price: "€ 985.000",
+    priceLabel: "k.k.",
+    filterBuurt: "zuid",
+    filterPrijs: "500000-1000000",
+    layout: "image-right",
+  },
+  {
+    slug: "ndsm-straat-88",
+    images: [
+      { src: "https://i.postimg.cc/mDqZ0JXT/Chat_GPT_Image_2_mrt_2026_16_05_43.png", alt: "NDSM-straat 88", objectPosition: "object-bottom" },
+      { src: "https://i.postimg.cc/qvzRT5N9/112275029_1920x1280.jpg", alt: "Interieur 1" },
+      { src: "https://i.postimg.cc/dVcDNL2P/bigstock_Amsterdam_Sunset_City_Skyline_212181106.jpg", alt: "Uitzicht" },
+    ],
+    badge: { label: "Onder bod", variant: "light" },
+    badgePosition: "left",
+    neighborhood: "Amsterdam Noord",
+    title: "NDSM-straat 88",
+    description:
+      "Industrieel en ruim opgezet loft-appartement met spectaculair uitzicht over het water en de stad in de bruisende NDSM-werf.",
+    area: "85 m²",
+    rooms: "3 Kamers",
+    price: "€ 650.000",
+    priceLabel: "k.k.",
+    filterBuurt: "noord",
+    filterPrijs: "500000-1000000",
+    layout: "image-left",
+  },
+  {
+    slug: "prinsengracht-712",
+    images: [
+      { src: "/images/properties/prop1-ext.png", alt: "Prinsengracht 712" },
+      { src: "/images/properties/prop1-int1.png", alt: "Interieur 1" },
+      { src: "/images/properties/prop1-int2.png", alt: "Interieur 2" },
+    ],
+    badge: { label: "Nieuw", variant: "orange" },
+    badgePosition: "right",
+    neighborhood: "Amsterdam Centrum",
+    title: "Prinsengracht 712",
+    description: "Prachtig gerenoveerd grachtenpand met authentieke details en weids uitzicht.",
+    area: "120 m²",
+    rooms: "3 Kamers",
+    price: "Prijs op aanvraag",
+    priceLabel: "",
+    filterBuurt: "centrum",
+    filterPrijs: "1000000+",
+    layout: "image-right",
+  },
+  {
+    slug: "herengracht-44",
+    images: [
+      { src: "/images/properties/prop2-ext.png", alt: "Herengracht 44" },
+      { src: "/images/properties/prop2-int1.png", alt: "Interieur 1" },
+      { src: "/images/properties/prop2-int2.png", alt: "Interieur 2" },
+    ],
+    badge: { label: "Te Koop", variant: "light" },
+    badgePosition: "left",
+    neighborhood: "Amsterdam Centrum",
+    title: "Herengracht 44",
+    description: "Zeer licht appartement in een rijksmonument, direct aan de gracht gelegen.",
+    area: "165 m²",
+    rooms: "4 Kamers",
+    price: "€ 1.850.000",
+    priceLabel: "k.k.",
+    filterBuurt: "centrum",
+    filterPrijs: "1000000+",
+    layout: "image-left",
+  },
+  {
+    slug: "vondelstraat-88",
+    images: [
+      { src: "/images/properties/prop3-ext.png", alt: "Vondelstraat 88" },
+      { src: "/images/properties/prop3-int1.png", alt: "Interieur 1" },
+      { src: "/images/properties/prop3-int2.png", alt: "Interieur 2" },
+      { src: "/images/properties/prop3-balcony.png", alt: "Balkon" },
+    ],
+    badge: { label: "Verkocht onder voorbehoud", variant: "light" },
+    badgePosition: "left",
+    neighborhood: "Amsterdam Oud-Zuid",
+    title: "Vondelstraat 88",
+    description: "Karakteristiek herenhuis met uitzicht op het Vondelpark en een diepe tuin op het zuiden.",
+    area: "310 m²",
+    rooms: "7 Kamers",
+    price: "€ 3.250.000",
+    priceLabel: "k.k.",
+    filterBuurt: "zuid",
+    filterPrijs: "1000000+",
+    layout: "image-right",
+  },
+  {
+    slug: "keizersgracht-112",
+    images: [
+      { src: "/images/properties/prop4-ext.png", alt: "Keizersgracht 112" },
+      { src: "/images/properties/prop4-int1.png", alt: "Interieur 1" },
+    ],
+    badge: { label: "Te Koop", variant: "orange" },
+    badgePosition: "right",
+    neighborhood: "Amsterdam Centrum",
+    title: "Keizersgracht 112",
+    description: "Modern, strak afgewerkt appartement in een prachtig historisch grachtenpand.",
+    area: "140 m²",
+    rooms: "4 Kamers",
+    price: "€ 1.600.000",
+    priceLabel: "k.k.",
+    filterBuurt: "centrum",
+    filterPrijs: "1000000+",
+    layout: "image-left",
+  },
+];
