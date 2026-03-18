@@ -97,7 +97,7 @@ export function VerkoopProactief({
   return (
     <section
       ref={sectionRef}
-      className={`bg-transparent border-t border-boutique-dark/10 ${
+      className={`bg-transparent ${
         isDesktop ? "h-[500vh] relative" : "py-24 md:py-32"
       }`}
       data-bg="bg-boutique-stone"

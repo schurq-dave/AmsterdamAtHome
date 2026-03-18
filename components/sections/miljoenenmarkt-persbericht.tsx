@@ -19,7 +19,7 @@ export function MiljoenenmarktPersbericht({
 }: MiljoenenmarktPersberichtProps) {
   return (
     <section
-      className="py-20 md:py-28 bg-transparent border-t border-boutique-dark/10"
+      className="py-20 md:py-28 bg-transparent"
       data-bg="bg-boutique-stone"
     >
       <div className="container mx-auto px-6 max-w-3xl reveal">

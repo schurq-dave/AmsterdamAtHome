@@ -22,8 +22,8 @@ export function VacatureApply({ contact }: VacatureApplyProps) {
   return (
     <section
       id="solliciteren"
-      className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10"
-      data-bg="bg-boutique-stone"
+      className="py-24 md:py-32 bg-transparent"
+      data-bg="bg-[#F1EFEE]"
     >
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">

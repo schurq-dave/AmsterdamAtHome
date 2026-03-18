@@ -77,9 +77,24 @@ export function HeroSection({
                   </a>
                 </div>
                 <div className="flex items-center gap-8 pt-4 opacity-90 hover:opacity-100 transition-all duration-500 drop-shadow-md">
-                  {trustLogos.map((logo) => (
-                    <img key={logo.alt} src={logo.src} alt={logo.alt} className={logo.className} />
-                  ))}
+                  {trustLogos.map((logo) => {
+                    let className = logo.className;
+                    if (logo.alt === "NVM") {
+                      className = "h-9 md:h-10 lg:h-12 w-auto object-contain self-end grayscale brightness-200";
+                    } else if (logo.alt === "MVA") {
+                      className = "h-9 md:h-10 lg:h-12 w-auto object-contain self-end ml-4 -mr-4";
+                    } else if (logo.alt === "Rightmove") {
+                      className = "h-12 md:h-14 lg:h-16 w-auto object-contain brightness-0 invert self-center ml-2 translate-y-1.5";
+                    }
+                    return (
+                      <img 
+                        key={logo.alt} 
+                        src={logo.src} 
+                        alt={logo.alt} 
+                        className={className} 
+                      />
+                    );
+                  })}
                 </div>
               </div>
 

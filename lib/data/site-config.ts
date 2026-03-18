@@ -8,8 +8,8 @@ export const siteConfig: SiteConfig = {
     alt: "Amsterdam at Home Makelaars",
   },
   trustLogos: [
-    { src: "https://i.postimg.cc/L8JkGMrG/631005.png", alt: "NVM" },
-    { src: "https://i.postimg.cc/rwDG7Lvf/filters_quality(100).jpg", alt: "MVA" },
+    { src: "/images/nvm-logo-new.png", alt: "NVM" },
+    { src: "/images/mva-logo-new.png", alt: "MVA" },
     { src: "https://i.postimg.cc/pLmQ3tg0/Rightmove_logo_(1).png", alt: "Rightmove" },
   ],
   topBar: {

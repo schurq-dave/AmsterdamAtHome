@@ -51,12 +51,13 @@ export default async function NeighborhoodPage({ params }: { params: { slug: str
       />
 
       <PageHero {...jordaanHeroData} />
-      <NeighborhoodDashboard {...jordaanDashboardData} />
       
       <WoningwaardeTextBlock
         {...jordaanIntroData}
         bgVariant="paper"
       />
+
+      <NeighborhoodDashboard {...jordaanDashboardData} />
       
       <WoningwaardeTextBlock
         {...jordaanApproachData}

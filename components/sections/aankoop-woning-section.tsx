@@ -21,10 +21,13 @@ export function AankoopWoningSection({
   ctaHref,
   buurtOptions,
 }: AankoopWoningSectionProps) {
+  // Split paragraph by double newlines to render multiple paragraphs
+  const paragraphs = paragraph.split('\n\n');
+
   return (
     <section
       id="aankoop-form"
-      className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10"
+      className="py-24 md:py-32 bg-transparent"
       data-bg="bg-boutique-stone"
     >
       <div className="container mx-auto px-6 max-w-6xl">
@@ -33,9 +36,13 @@ export function AankoopWoningSection({
             <h2 className="text-3xl md:text-5xl font-serif text-boutique-dark mb-6">
               {heading}
             </h2>
-            <p className="text-gray-700 font-light text-lg leading-relaxed mb-10">
-              {paragraph}
-            </p>
+            <div className="mb-10">
+              {paragraphs.map((p, i) => (
+                <p key={i} className="text-gray-700 font-light text-lg leading-relaxed mb-4 last:mb-0">
+                  {p}
+                </p>
+              ))}
+            </div>
             <a
               href={ctaHref}
               className="inline-flex items-center gap-3 text-boutique-dark group font-sans"

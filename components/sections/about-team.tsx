@@ -10,7 +10,7 @@ interface AboutTeamProps {
 
 export function AboutTeam({ heading, description, members }: AboutTeamProps) {
   return (
-    <section className="py-32 md:py-40 bg-transparent border-t border-boutique-dark/10" data-bg="bg-boutique-paper">
+    <section className="py-32 md:py-40 bg-transparent" data-bg="bg-boutique-paper">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-24 reveal">
           <h2 className="text-3xl md:text-5xl font-serif text-boutique-dark mb-6">{heading}</h2>

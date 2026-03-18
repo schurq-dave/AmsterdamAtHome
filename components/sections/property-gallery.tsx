@@ -65,7 +65,7 @@ export function PropertyGallery({ images, badge, badgePosition = "left" }: Prope
     <>
       {/* Inline Gallery Grid */}
       <section className="container mx-auto px-6 mb-20 md:mb-32 reveal">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-[50vh] md:h-[65vh] rounded-xl overflow-hidden shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 h-[50vh] md:h-[65vh] overflow-hidden shadow-2xl">
           {/* Main Large Image */}
           <div 
             className="h-full relative group cursor-pointer"
@@ -167,12 +167,12 @@ export function PropertyGallery({ images, badge, badgePosition = "left" }: Prope
           </div>
 
           {/* Thumbnail Strip (Bottom) */}
-          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex gap-2 p-2 bg-black/20 rounded-xl max-w-[80vw] overflow-x-auto hide-scrollbar z-50">
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 hidden md:flex gap-2 p-2 bg-black/20 max-w-[80vw] overflow-x-auto hide-scrollbar z-50">
             {images.map((img, idx) => (
               <button
                 key={idx}
                 onClick={() => setCurrentIndex(idx)}
-                className={`relative w-20 h-14 rounded overflow-hidden flex-shrink-0 transition-all ${
+                className={`relative w-20 h-14 overflow-hidden flex-shrink-0 transition-all ${
                   idx === currentIndex ? "ring-2 ring-boutique-orange opacity-100" : "opacity-40 hover:opacity-80"
                 }`}
               >

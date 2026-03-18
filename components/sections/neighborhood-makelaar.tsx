@@ -16,7 +16,7 @@ export function NeighborhoodMakelaar({
   image,
 }: NeighborhoodMakelaarProps) {
   return (
-    <section className="py-32 md:py-40 bg-transparent border-t border-boutique-dark/10" data-bg="bg-boutique-paper">
+    <section className="py-32 md:py-40 bg-transparent" data-bg="bg-boutique-paper">
       <div className="container mx-auto px-6 max-w-6xl">
         <div className="flex flex-col md:flex-row items-center justify-center relative reveal">
           <div className="w-full md:w-[45%] relative z-10">

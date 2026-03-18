@@ -13,7 +13,7 @@ export function HuizenmarktContentSection({
   if (!hasContent) return null;
 
   return (
-    <section className="py-16 md:py-20 bg-transparent border-t border-boutique-dark/10" data-bg="bg-boutique-stone">
+    <section className="py-16 md:py-20 bg-transparent" data-bg="bg-boutique-stone">
       <div className="container mx-auto px-6 max-w-4xl reveal">
         <h2 className="text-2xl md:text-3xl font-serif text-boutique-dark mb-6 uppercase">{heading}</h2>
         {content && <p className="text-gray-700 font-light leading-relaxed">{content}</p>}

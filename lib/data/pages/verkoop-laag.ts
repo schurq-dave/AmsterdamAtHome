@@ -20,6 +20,7 @@ export const verkoopLaagHeroData = {
   title: "Verkoop < € 1.000.000",
   backgroundImage:
     "https://i.postimg.cc/dVcDNL2P/bigstock_Amsterdam_Sunset_City_Skyline_212181106.jpg",
+  bgPositionClass: "bg-[center_top]",
 };
 
 export const verkoopLaagTrustData = {
@@ -45,6 +46,7 @@ export const verkoopLaagVerschillenData = {
       title: "Internationaal verkopen met Rightmove",
       description:
         "Wij werken nauw samen met Rightmove, het grootste woningplatform van het Verenigd Koninkrijk met ruim 14 miljoen bezoekers per maand. Zo bereikt uw woning een internationaal publiek.",
+      image: "/images/rightmove-logo-large.png",
     },
     {
       number: "02",
@@ -52,24 +54,28 @@ export const verkoopLaagVerschillenData = {
       description:
         "Dankzij ons eigen datamodel hebben wij unieke inzichten in de actuele ontwikkelingen van woningprijzen bij u in de buurt. Zo adviseren wij u over de optimale vraagprijs.",
       cta: { label: "Download kwartaalrapport", href: "#" },
+      image: "/images/noord-market-stats.png",
     },
     {
       number: "03",
       title: "Groot bestand aan zoekers",
       description:
         "Wij beschikken over een grote database van actieve zoekers die automatisch per mail op de hoogte worden gebracht van uw woning — al een dag voordat het op Funda komt.",
+      image: "/images/properties/prop3-ext.png",
     },
     {
       number: "04",
       title: "Een groot bereik met sociale media",
       description:
         "Onze online marketing specialist zorgt ervoor dat uw woning 5.000 tot 10.000 mensen in de doelgroep bereikt via gerichte social media campagnes.",
+      image: "/images/properties/prop4-ext.png",
     },
     {
       number: "05",
       title: "Ervaren en persoonlijke benadering",
       description:
         "Wij combineren jonge, frisse blikken met ruim 20 jaar ervaring in de Amsterdamse woningmarkt. Korte lijnen en snelle reacties zijn bij ons de standaard.",
+      image: "/images/personal-approach.png",
     },
   ],
 };

@@ -16,6 +16,8 @@ export const blogPageSeo: SeoData = {
 export const blogHeroData = {
   label: "Inzichten & Data",
   title: "Blog",
+  backgroundImage: "/images/blog-hero-new.png",
+  bgPositionClass: "bg-[center_50%]",
 };
 
 export const blogIntroData = {

@@ -12,7 +12,7 @@ interface BeleggingCtaBlocksProps {
 
 export function BeleggingCtaBlocks({ blocks }: BeleggingCtaBlocksProps) {
   return (
-    <section className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10" data-bg="bg-boutique-stone">
+    <section className="py-24 md:py-32 bg-transparent" data-bg="bg-boutique-stone">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {blocks.map((block) => (

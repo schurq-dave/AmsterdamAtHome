@@ -89,7 +89,7 @@ export function WoningwaardeTextBlock({
             // Center the last item if it's on an odd row in a 2-column grid
             const isLastOdd = i === bullets.length - 1 && bullets.length % 2 !== 0;
             return (
-              <div key={i} className={`flex gap-6 items-start border-t border-boutique-dark/10 pt-6 ${isLastOdd ? "md:col-span-2 md:w-1/2 md:mx-auto" : ""}`}>
+              <div key={i} className={`flex gap-6 items-start pt-6 ${isLastOdd ? "md:col-span-2 md:w-1/2 md:mx-auto" : ""}`}>
                 <span className="font-serif italic text-boutique-orange text-2xl">
                   0{i + 1}
                 </span>

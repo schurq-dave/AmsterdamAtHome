@@ -39,7 +39,7 @@ export function HuizenmarktForm({
   }
 
   return (
-    <section id="kwartaalrapport-form" className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10" data-bg="bg-boutique-stone">
+    <section id="kwartaalrapport-form" className="py-24 md:py-32 bg-transparent" data-bg="bg-boutique-stone">
       <div className="container mx-auto px-6 max-w-2xl reveal">
         <h2 className="text-3xl md:text-4xl font-serif text-boutique-dark mb-12 text-center">{heading}</h2>
 

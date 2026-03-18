@@ -28,8 +28,8 @@ export const heroData = {
   primaryCta: { label: "Bekijk Woningaanbod", href: "#aanbod" },
   secondaryCta: { label: "Verkoopadvies", href: "#waardebepaling" },
   trustLogos: [
-    { src: "https://i.postimg.cc/L8JkGMrG/631005.png", alt: "NVM", className: "h-11 md:h-12 lg:h-14 w-auto object-contain brightness-0 invert self-end" },
-    { src: "https://i.postimg.cc/rwDG7Lvf/filters_quality(100).jpg", alt: "MVA", className: "h-8 md:h-9 lg:h-10 w-auto object-contain invert grayscale mix-blend-screen self-end pb-[6px]" },
+    { src: "/images/nvm-logo-new.png", alt: "NVM", className: "h-11 md:h-12 lg:h-14 w-auto object-contain self-end" },
+    { src: "/images/mva-logo-new.png", alt: "MVA", className: "h-11 md:h-12 lg:h-14 w-auto object-contain self-end" },
     { src: "https://i.postimg.cc/pLmQ3tg0/Rightmove_logo_(1).png", alt: "Rightmove", className: "h-11 md:h-12 lg:h-14 w-auto object-contain brightness-0 invert self-center" },
   ],
   chatPreview: {

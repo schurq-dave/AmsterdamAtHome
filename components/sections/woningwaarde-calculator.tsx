@@ -151,7 +151,7 @@ export function WoningwaardeCalculator({
                   </div>
                 </div>
 
-                <div className="text-center pt-8 border-t border-boutique-dark/10">
+                <div className="text-center pt-8">
                   <button
                     type="submit"
                     className="inline-flex items-center gap-4 bg-boutique-dark text-white px-12 py-5 font-sans font-bold uppercase tracking-[0.2em] text-xs hover:bg-boutique-orange transition-colors"

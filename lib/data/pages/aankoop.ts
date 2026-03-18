@@ -25,6 +25,7 @@ export const aankoopHeroData = {
   subtitle: "Vind uw droomhuis!",
   backgroundImage:
     "https://i.postimg.cc/dVcDNL2P/bigstock_Amsterdam_Sunset_City_Skyline_212181106.jpg",
+  bgPositionClass: "bg-[center_30%]",
 };
 
 export const aankoopIntroData = {

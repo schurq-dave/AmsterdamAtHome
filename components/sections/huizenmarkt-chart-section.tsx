@@ -14,7 +14,7 @@ function ChartPlaceholder({ label }: { label: string }) {
 
 export function HuizenmarktChartSection({ heading, chartLabel, children }: ChartSectionProps) {
   return (
-    <section className="py-20 md:py-28 bg-transparent border-t border-boutique-dark/10" data-bg="bg-boutique-stone">
+    <section className="py-20 md:py-28 bg-transparent" data-bg="bg-boutique-stone">
       <div className="container mx-auto px-6 max-w-5xl reveal">
         <h2 className="text-2xl md:text-4xl font-serif text-boutique-dark mb-10 uppercase">{heading}</h2>
         <div className="mb-8">{children}</div>

@@ -34,7 +34,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
   return (
     <main className="min-h-screen bg-boutique-paper pb-32">
       {/* Navigation Bar */}
-      <div className="container mx-auto px-6 py-8 pt-28 md:pt-36 flex justify-between items-center">
+      <div className="container mx-auto px-6 py-4 pt-24 md:pt-32 flex justify-between items-center">
         <Link 
           href="/aanbod" 
           className="group flex items-center gap-3 text-xs font-sans font-bold uppercase tracking-widest text-boutique-dark hover:text-boutique-orange transition-colors"
@@ -47,7 +47,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
       </div>
 
       {/* Header Info */}
-      <div className="container mx-auto px-6 mb-10">
+      <div className="container mx-auto px-6 mb-8">
         <div className="max-w-5xl reveal">
           <div className="flex flex-wrap items-center gap-4 mb-6">
             {property.badge && (
@@ -205,7 +205,7 @@ export default async function PropertyDetailPage({ params }: { params: Promise<{
                   </button>
                 </div>
 
-                <div className="mt-10 pt-10 border-t border-boutique-dark/10 relative z-10">
+                <div className="mt-10 pt-10 relative z-10">
                   <p className="font-sans font-bold uppercase tracking-widest text-[10px] text-boutique-dark/60 mb-6">
                     Uw makelaar voor deze woning
                   </p>

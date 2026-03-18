@@ -10,6 +10,8 @@ const BG_CLASSES = [
   "bg-boutique-sand",
   "bg-boutique-khaki",
   "bg-boutique-paper",
+  "bg-[#F1EFEE]",
+  "bg-[#E6E4DC]"
 ];
 
 export function ScrollEffects() {

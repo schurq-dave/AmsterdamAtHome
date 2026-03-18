@@ -33,7 +33,7 @@ export function PageHero({
       <div className="container mx-auto px-6 relative z-10 text-white pb-12 reveal">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div>
-            <span className="text-[10px] font-bold uppercase tracking-[0.2em] mb-3 block font-sans text-boutique-stone">
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] mb-3 block font-sans text-white">
               {label}
             </span>
             <h1 className="text-5xl md:text-7xl font-serif">{title}</h1>
@@ -43,10 +43,10 @@ export function PageHero({
           </div>
           <div className="flex items-center gap-6 opacity-90 drop-shadow-md">
             {siteConfig.trustLogos.map((logo) => {
-              let className = "w-auto object-contain brightness-0 invert";
-              if (logo.alt === "NVM") className = `h-8 md:h-10 ${className}`;
-              else if (logo.alt === "MVA") className = "h-6 md:h-8 w-auto object-contain invert grayscale mix-blend-screen";
-              else if (logo.alt === "Rightmove") className = `h-10 md:h-12 ${className}`;
+              let className = "w-auto object-contain";
+              if (logo.alt === "NVM") className = `h-6 md:h-8 grayscale brightness-200 ${className}`;
+              else if (logo.alt === "MVA") className = `h-6 md:h-8 ml-4 -mr-4 ${className}`;
+              else if (logo.alt === "Rightmove") className = `h-12 md:h-14 brightness-0 invert ml-2 -translate-y-0.5 ${className}`;
               
               return <img key={logo.alt} src={logo.src} alt={logo.alt} className={className} />;
             })}

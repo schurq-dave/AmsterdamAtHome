@@ -91,19 +91,10 @@ export function AankoopProcess({
   return (
     <section
       ref={sectionRef}
-      className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10"
+      className="pb-24 md:pb-32 pt-12 bg-transparent"
       data-bg="bg-boutique-paper"
     >
       <div className="container mx-auto px-6 max-w-6xl">
-        <h2 className="text-3xl md:text-5xl font-serif text-boutique-dark mb-8 text-center reveal">
-          {heading}
-        </h2>
-        {subheading && (
-          <p className="text-gray-600 font-light text-lg text-center max-w-3xl mx-auto mb-20 reveal">
-            {subheading}
-          </p>
-        )}
-
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-20 reveal">
           {/* Left Side - Timeline Tabs */}
           <div className="lg:w-1/3 relative">
@@ -141,6 +132,17 @@ export function AankoopProcess({
 
           {/* Right Side - Content Area */}
           <div className="lg:w-2/3">
+            <div className="mb-12">
+              <h2 className="text-3xl md:text-4xl font-serif text-boutique-dark mb-4">
+                {heading}
+              </h2>
+              {subheading && (
+                <p className="text-gray-600 font-light text-lg">
+                  {subheading}
+                </p>
+              )}
+            </div>
+
             <div 
               className="bg-white p-10 md:p-16 border-t-4 border-boutique-orange shadow-xl relative overflow-hidden min-h-[400px] flex flex-col justify-center"
               onMouseEnter={() => setIsPaused(true)} 

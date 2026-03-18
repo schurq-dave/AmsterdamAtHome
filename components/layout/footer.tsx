@@ -16,7 +16,7 @@ interface FooterProps {
 
 export function Footer({ logo, contact, socialLinks, footerColumns, newsletter }: FooterProps) {
   return (
-    <footer className="bg-boutique-stone pt-32 pb-10 border-t border-boutique-dark/10 text-boutique-dark">
+    <footer className="bg-boutique-stone pt-32 pb-10 text-boutique-dark">
       <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div>
           <a href="#" className="block w-48 h-12 mb-8 overflow-hidden">

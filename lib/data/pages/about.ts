@@ -39,29 +39,34 @@ export const aboutDifferencesData = {
       title: "Team van enthousiaste en ervaren medewerkers",
       description:
         "Hierdoor hebben wij een persoonlijke benadering en korte lijnen. U kunt zeer snelle reacties verwachten.",
+      image: "/images/properties/prop1-ext.png",
     },
     {
       number: "02",
       title: "Wij beschikken over een eigen datamodel",
       description:
         "Daardoor hebben wij een uniek inzicht in de ontwikkeling van de woningprijzen bij u in de buurt en kunnen wij u adviseren welke prijs u het beste kunt vragen om het hoogst mogelijk resultaat te behalen.",
+      image: "/images/properties/prop2-ext.png",
     },
     {
       number: "03",
       title: "Wij hanteren een Brexit strategie",
       description:
         "De toenemende stroom van expats is zeer belangrijk in de huidige markt en met onze strategie zorgen wij ervoor dat deze groep via de juiste kanalen bereikt wordt.",
+      image: "/images/properties/prop3-ext.png",
     },
     {
       number: "04",
       title: "Wij zijn buurtspecialisten",
       description: "Met jarenlange ervaring in uw favoriete buurt(en).",
+      image: "/images/properties/prop4-ext.png",
     },
     {
       number: "05",
       title: "Groot netwerk van makelaars, taxateurs en bouwkundigen",
       description:
         "Wij onderhouden een zeer goede relatie met onze collega makelaars. Dit kan net het verschil maken tussen het huis voor u kunnen aan-/verkopen of niet.",
+      image: "/images/properties/prop1-int1.png",
     },
   ] satisfies AboutDifference[],
 };

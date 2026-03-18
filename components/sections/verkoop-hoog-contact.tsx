@@ -15,7 +15,7 @@ export function VerkoopHoogContact({
 }: VerkoopHoogContactProps) {
   return (
     <section
-      className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10"
+      className="py-24 md:py-32 bg-transparent"
       data-bg="bg-boutique-paper"
     >
       <div className="container mx-auto px-6 max-w-3xl text-center reveal">

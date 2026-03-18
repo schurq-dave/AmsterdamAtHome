@@ -16,6 +16,7 @@ export const klantenHeroData = {
   label: "Onze referenties",
   title: "Klanten vertellen",
   backgroundImage: "https://i.postimg.cc/NfTNcmKk/amsterdam_at_home_22_1.jpg",
+  bgPositionClass: "bg-[center_15%]",
 };
 
 export const klantenRatingData = {
@@ -94,6 +95,16 @@ export const testimonials: Testimonial[] = [
       '"Je voelt dat de verkoop van je huis in vertrouwde handen is. Ze maken meer dan waar wat ze beloven. Je krijgt bij vragen altijd snel en duidelijk antwoord."',
     ],
     borderVariant: "stone",
+    platform: "funda",
+  },
+  {
+    name: "Familie de Vries",
+    score: "9.5",
+    stars: 5,
+    paragraphs: [
+      '"Vanaf het eerste moment hadden we een goed gevoel bij Amsterdam at Home. Ze zijn professioneel, transparant en hebben een enorm netwerk. De communicatie verliep vlekkeloos en we zijn ontzettend blij met het eindresultaat. Een absolute aanrader voor iedereen die een huis wil verkopen in Amsterdam!"',
+    ],
+    borderVariant: "orange",
     platform: "funda",
   },
 ];

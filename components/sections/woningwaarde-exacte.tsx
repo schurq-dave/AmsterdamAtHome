@@ -52,7 +52,7 @@ export function WoningwaardeExacte({
               ))}
             </div>
             
-            <div className="pt-8 border-t border-boutique-dark/10">
+            <div className="pt-8">
               <p className="text-gray-600 font-light text-sm leading-relaxed italic">
                 {trailingParagraph}
               </p>

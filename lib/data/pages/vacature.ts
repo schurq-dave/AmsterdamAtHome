@@ -33,12 +33,30 @@ export const vacatureContentData = {
     heading: "Wat ga je doen?",
     description: "In deze veelzijdige rol:",
     items: [
-      "Je zorgt dat het kantoor op rolletjes loopt: van agendabeheer en dossiercontrole tot klantcontact.",
-      "Je ondersteunt makelaars bij het voorbereiden van verkoopdossiers, taxaties, bezichtigingen en koopovereenkomsten.",
-      "Je bewaakt deadlines, schakelt snel met notarissen, fotografen en klanten en zorgt dat alle stukken tijdig en correct klaarliggen.",
-      "Je houdt overzicht, structuur en sfeer op kantoor.",
-      "Je bent het eerste aanspreekpunt voor binnenkomende klanten, leveranciers en samenwerkingspartners.",
-      "Je organiseert de gezamenlijke lunch – voor de gezelligheid én de teamspirit.",
+      {
+        title: "Kantoorbeheer",
+        description: "Je zorgt dat het kantoor op rolletjes loopt: van agendabeheer en dossiercontrole tot klantcontact.",
+      },
+      {
+        title: "Makelaars Ondersteunen",
+        description: "Je ondersteunt makelaars bij het voorbereiden van verkoopdossiers, taxaties, bezichtigingen en koopovereenkomsten.",
+      },
+      {
+        title: "Deadlines & Communicatie",
+        description: "Je bewaakt deadlines, schakelt snel met notarissen, fotografen en klanten en zorgt dat alle stukken tijdig en correct klaarliggen.",
+      },
+      {
+        title: "Structuur & Sfeer",
+        description: "Je houdt overzicht, structuur en sfeer op kantoor.",
+      },
+      {
+        title: "Eerste Aanspreekpunt",
+        description: "Je bent het eerste aanspreekpunt voor binnenkomende klanten, leveranciers en samenwerkingspartners.",
+      },
+      {
+        title: "Teamspirit & Lunch",
+        description: "Je organiseert de gezamenlijke lunch – voor de gezelligheid én de teamspirit.",
+      },
     ],
   },
   offer: {

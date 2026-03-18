@@ -16,8 +16,8 @@ export const aanbodPageSeo: SeoData = {
 export const aanbodHeroData = {
   label: "Exclusief Aanbod",
   title: "Woningaanbod",
-  backgroundImage: "/images/aanbod-hero-new-3.png",
-  bgPositionClass: "bg-[center_30%]",
+  backgroundImage: "/images/aanbod-hero-new-4.png",
+  bgPositionClass: "bg-[center_60%]",
 };
 
 export const buurtFilters: FilterOption[] = [
@@ -199,5 +199,24 @@ export const aanbodProperties: AanbodProperty[] = [
     filterBuurt: "centrum",
     filterPrijs: "1000000+",
     layout: "image-left",
+  },
+  {
+    slug: "willemsparkweg-45",
+    images: [
+      { src: "https://i.postimg.cc/dVcDNL2P/bigstock_Amsterdam_Sunset_City_Skyline_212181106.jpg", alt: "Willemsparkweg 45" },
+      { src: "https://i.postimg.cc/q75JbGMq/113723059.jpg", alt: "Interieur 1" },
+    ],
+    badge: { label: "Te Koop", variant: "light" },
+    badgePosition: "left",
+    neighborhood: "Amsterdam Oud-Zuid",
+    title: "Willemsparkweg 45",
+    description: "Karakteristiek herenhuis met authentieke details, gelegen in het prestigieuze Oud-Zuid.",
+    area: "210 m²",
+    rooms: "6 Kamers",
+    price: "€ 2.450.000",
+    priceLabel: "k.k.",
+    filterBuurt: "zuid",
+    filterPrijs: "1000000+",
+    layout: "image-right",
   },
 ];

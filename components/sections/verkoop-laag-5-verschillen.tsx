@@ -5,6 +5,7 @@ interface VerschilItem {
   title: string;
   description: string;
   cta?: { label: string; href: string };
+  image?: string;
 }
 
 interface VerkoopLaag5VerschillenProps {
@@ -18,58 +19,61 @@ export function VerkoopLaag5Verschillen({
 }: VerkoopLaag5VerschillenProps) {
   return (
     <section
-      className="py-24 md:py-32 bg-transparent border-t border-boutique-dark/10"
+      className="py-24 md:py-32 bg-transparent"
       data-bg="bg-boutique-paper"
     >
-      <div className="container mx-auto px-6 max-w-5xl">
-        <h2 className="text-3xl md:text-5xl font-serif text-boutique-dark mb-24 text-center reveal">
+      <div className="container mx-auto px-6 max-w-6xl">
+        <h2 className="text-3xl md:text-5xl font-serif text-boutique-dark mb-16 md:mb-24 text-center reveal">
           {heading}
         </h2>
         
-        <div className="space-y-12 reveal">
+        <div className="flex flex-col border-t border-boutique-dark/10 reveal">
           {items.map((item, index) => (
             <div
               key={item.number}
-              className={`flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} gap-12 items-center`}
+              className="border-b border-boutique-dark/10 py-8 md:py-12 flex flex-col md:flex-row gap-6 md:gap-12 items-start md:items-center group"
             >
-              {/* Number and Content */}
+              {/* Number */}
+              <div className="w-12 md:w-20 flex-shrink-0">
+                <span className="text-lg md:text-xl font-sans text-boutique-dark/60 font-medium group-hover:text-boutique-dark transition-colors">
+                  {item.number}
+                </span>
+              </div>
+              
+              {/* Title */}
+              <div className="w-full md:w-[25%] flex-shrink-0">
+                <h3 className="text-xl md:text-2xl font-serif text-boutique-dark">
+                  {item.title}
+                </h3>
+              </div>
+              
+              {/* Description */}
               <div className="flex-1">
-                <div className="flex items-start gap-6 md:gap-8 mb-6">
-                  <div className="w-16 h-16 md:w-20 md:h-20 flex-shrink-0 rounded-full bg-boutique-orange text-white flex items-center justify-center">
-                    <span className="font-serif italic text-2xl md:text-3xl font-bold">
-                      {item.number}
-                    </span>
-                  </div>
-                  <h3 className="text-2xl md:text-3xl font-serif font-bold text-boutique-dark leading-tight pt-2">
-                    {item.title}
-                  </h3>
-                </div>
-                <p className="text-gray-700 font-light text-base md:text-lg leading-relaxed mb-8 md:pl-24">
+                <p className="text-gray-700 font-light text-[15px] md:text-base leading-relaxed max-w-lg">
                   {item.description}
                 </p>
                 
                 {item.cta && (
                   <a
                     href={item.cta.href}
-                    className="inline-flex items-center gap-3 text-boutique-dark font-sans font-bold uppercase tracking-[0.2em] text-[11px] hover:text-boutique-orange transition-colors md:ml-24"
+                    className="inline-flex items-center gap-3 text-boutique-dark font-sans font-bold uppercase tracking-[0.2em] text-[11px] hover:text-boutique-orange transition-colors mt-6"
                   >
                     {item.cta.label}
                     <ArrowRight className="w-4 h-4" />
                   </a>
                 )}
               </div>
-
-              {/* Visual Divider */}
-              <div className="flex-1 hidden md:block">
-                <div className="relative h-32">
-                  <div className="absolute inset-0 bg-gradient-to-b from-boutique-orange/10 to-boutique-stone/10 rounded-lg" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-boutique-orange/20 font-serif text-6xl italic font-bold">
-                      {item.number}
-                    </div>
-                  </div>
+              
+              {/* Image */}
+              {item.image && (
+                <div className="w-full md:w-[25%] flex-shrink-0 mt-6 md:mt-0 overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title} 
+                    className="w-full h-48 md:h-40 object-cover transition-transform duration-700 group-hover:scale-105" 
+                  />
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>

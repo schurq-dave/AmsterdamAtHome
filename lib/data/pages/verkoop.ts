@@ -124,32 +124,37 @@ export const verkoopRecentSoldData = {
 
 export const verkoop5StappenData = {
   heading: "Aanpak verkoopmakelaar Amsterdam At Home in 5 stappen",
-  steps: [
+  items: [
     {
       number: "01",
       title: "Internationale Expat verkoopstrategie",
       description: "Rightmove, meertalig (EN/ES) – bereik kopers in het buitenland.",
+      image: "/images/properties/prop1-ext.png",
     },
     {
       number: "02",
       title: "Een verkoopmakelaar met unieke inzichten",
       description: "Datamodel met actuele marktdata.",
       cta: { label: "Download kwartaalrapport", href: "#" },
+      image: "/images/properties/prop2-ext.png",
     },
     {
       number: "03",
       title: "Groot bestand aan zoekers",
       description: "Uw woning bereikt actieve kopers die al in ons netwerk zitten.",
+      image: "/images/properties/prop3-ext.png",
     },
     {
       number: "04",
       title: "Een online verkoopstrategie",
       description: "5.000–10.000 mensen bereik met gerichte campagnes.",
+      image: "/images/properties/prop4-ext.png",
     },
     {
       number: "05",
       title: "Persoonlijke begeleiding",
       description: "Van bezichtiging tot overdracht aan uw zijde.",
+      image: "/images/properties/prop1-int1.png",
     },
   ],
 };

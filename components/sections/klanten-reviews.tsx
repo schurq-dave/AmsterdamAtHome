@@ -113,6 +113,25 @@ export function KlantenReviews({
             ))}
           </div>
         </div>
+
+        <div className="mt-20 text-center reveal">
+          <a
+            href="https://www.funda.nl/makelaars/amsterdam/24755-amsterdam-at-home-makelaars/beoordelingen/verkoop/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-boutique-orange text-white font-sans font-bold uppercase tracking-[0.2em] text-xs hover:bg-boutique-dark transition-colors shadow-lg group"
+          >
+            Lees meer reviews op Funda
+            <svg 
+              className="w-4 h-4 transition-transform group-hover:translate-x-1" 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinelinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
+        </div>
       </div>
     </section>
   );
