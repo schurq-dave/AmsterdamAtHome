@@ -8,18 +8,12 @@ import {
   datagedrevenSeo,
   datagedrevenHeroData,
   datagedrevenIntroData,
-  datagedrevenDashboardData,
-  datagedrevenBuurtData,
-  datagedrevenSegmentData,
-  datagedrevenVraagprijsData,
-  datagedrevenIndexData,
-  datagedrevenCalculatorData,
-  datagedrevenPositioneringData,
-  datagedrevenConclusieData,
+  datagedrevenPointsData,
 } from "@/lib/data/pages/datagedreven";
 
 import { PageHero } from "@/components/sections/page-hero";
 import { WoningwaardeTextBlock } from "@/components/sections/woningwaarde-text-block";
+import { DatagedrevenPoints } from "@/components/sections/datagedreven-points";
 
 export const metadata: Metadata = generatePageMetadata(datagedrevenSeo);
 
@@ -39,21 +33,7 @@ export default function DatagedrevenMakelaardijPage() {
 
       <WoningwaardeTextBlock {...datagedrevenIntroData} bgVariant="paper" />
       
-      <WoningwaardeTextBlock {...datagedrevenDashboardData} bgVariant="stone" />
-      
-      <WoningwaardeTextBlock {...datagedrevenBuurtData} bgVariant="paper" />
-      
-      <WoningwaardeTextBlock {...datagedrevenSegmentData} bgVariant="stone" />
-      
-      <WoningwaardeTextBlock {...datagedrevenVraagprijsData} bgVariant="paper" />
-      
-      <WoningwaardeTextBlock {...datagedrevenIndexData} bgVariant="stone" />
-      
-      <WoningwaardeTextBlock {...datagedrevenCalculatorData} bgVariant="paper" />
-      
-      <WoningwaardeTextBlock {...datagedrevenPositioneringData} bgVariant="stone" />
-      
-      <WoningwaardeTextBlock {...datagedrevenConclusieData} bgVariant="paper" />
+      <DatagedrevenPoints {...datagedrevenPointsData} />
     </>
   );
 }
