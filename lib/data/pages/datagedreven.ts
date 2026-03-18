@@ -53,7 +53,7 @@ export const datagedrevenBuurtData = {
   ],
   image: "/images/buurten-kaart-3d.png",
   imageAlt: "Overbieding per buurt",
-  layoutVariant: "side-by-side-reverse" as const,
+  layoutVariant: "side-by-side" as const,
 };
 
 export const datagedrevenSegmentData = {
@@ -99,7 +99,7 @@ export const datagedrevenCalculatorData = {
   ],
   image: "/images/woningwaarde-icon.png",
   imageAlt: "Biedingscalculator",
-  layoutVariant: "side-by-side-reverse" as const,
+  layoutVariant: "side-by-side" as const,
 };
 
 export const datagedrevenPositioneringData = {
