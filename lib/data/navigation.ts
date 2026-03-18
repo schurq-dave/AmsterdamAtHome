@@ -3,7 +3,7 @@ import type { NavigationData } from "@/lib/types";
 export const navigationData: NavigationData = {
   desktopLinks: [
     { label: "Datagedreven Makelaardij", href: "/datagedreven-makelaardij" },
-    { label: "Onze werkwijze", href: "#datagedreven" },
+    { label: "Overbiedingen", href: "#datagedreven" },
     { label: "Contact", href: "#contact", variant: "primary" },
   ],
   menuGroups: [
