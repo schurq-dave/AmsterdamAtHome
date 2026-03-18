@@ -49,7 +49,7 @@ export default function VerkoopPage() {
       <VerkoopProactief {...verkoopProactiefData} />
       <VerkoopOnlineStrategie {...verkoopOnlineStrategieData} />
       <VerkoopRecentSold {...verkoopRecentSoldData} />
-      <Verkoop5Stappen {...verkoop5StappenData} />
+      <Verkoop5Stappen heading={verkoop5StappenData.heading} steps={verkoop5StappenData.items} />
       <AboutTeam {...verkoopTeamData} />
       <KlantenReviews
         heading={verkoopReferentiesData.heading}
