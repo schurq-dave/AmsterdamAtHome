@@ -99,11 +99,6 @@ export function DatagedrevenPoints({
           <h2 className="text-3xl md:text-5xl font-serif text-boutique-dark mb-6">
             {heading}
           </h2>
-          {subheading && (
-            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto">
-              {subheading}
-            </p>
-          )}
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 mb-20 reveal">
@@ -182,6 +177,14 @@ export function DatagedrevenPoints({
             </div>
           </div>
         </div>
+
+        {subheading && (
+          <div className="mb-16 text-center reveal">
+            <p className="text-gray-600 font-light text-lg max-w-3xl mx-auto whitespace-pre-line">
+              {subheading}
+            </p>
+          </div>
+        )}
 
         {ctaLabel && ctaHref && (
           <div className="text-center reveal">

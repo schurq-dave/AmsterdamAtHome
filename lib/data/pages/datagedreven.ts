@@ -24,16 +24,15 @@ export const datagedrevenHeroData = {
 export const datagedrevenIntroData = {
   heading: "De perfecte balans tussen menselijke aandacht en geavanceerde woningmarktcijfers",
   paragraphs: [
-    "Amsterdam At Home onderscheidt zich door een unieke combinatie: de persoonlijke, betrokken service van een boutique makelaar én de precisie van geavanceerde data-analyse. Voor zowel kopers als verkopers betekent dit één ding: geen onzekerheid, geen giswerk, maar inzicht, duidelijkheid en strategisch voordeel.",
-    "Waar veel makelaars vertrouwen op ervaring en gevoel, bouwt Amsterdam At Home voort op iets krachtigers:\nmenselijke aandacht × datagedreven beslissingen = huizen optimaal aankopen en verkopen."
+    "Amsterdam At Home onderscheidt zich door een unieke combinatie: de persoonlijke, betrokken service van een boutique makelaar én de precisie van geavanceerde data-analyse. Voor zowel kopers als verkopers betekent dit één ding: geen onzekerheid, geen giswerk, maar inzicht, duidelijkheid en strategisch voordeel."
   ],
   layoutVariant: "stacked" as const,
   centerHeading: true,
 };
 
 export const datagedrevenPointsData = {
-  heading: "8 Punten van de Overbiedingsmonitor",
-  subheading: "Onze geïntegreerde methode levert helderheid en maximale resultaten voor koper en verkoper.",
+  heading: "Onze methode",
+  subheading: "Waar veel makelaars vertrouwen op ervaring en gevoel, bouwt Amsterdam At Home voort op iets krachtigers:\nmenselijke aandacht × datagedreven beslissingen = huizen optimaal aankopen en verkopen.",
   points: [
     {
       number: "1",
