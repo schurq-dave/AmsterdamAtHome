@@ -1,7 +1,7 @@
 import type { SeoData, UspItem, ChatMarketData } from "@/lib/types";
 
 export const homePageSeo: SeoData = {
-  metaTitle: "Amsterdam at Home | Boutique Makelaar",
+  metaTitle: "Amsterdam at Home | Makelaar",
   metaDescription:
     "De makelaar van Amsterdam. Beoordeeld met een 9.8. Wij bieden een proactieve, persoonlijke en datagedreven aanpak.",
   slug: "",

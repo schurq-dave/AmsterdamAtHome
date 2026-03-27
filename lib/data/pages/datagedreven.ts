@@ -1,13 +1,13 @@
 import type { SeoData } from "@/lib/types";
 
 export const datagedrevenSeo: SeoData = {
-  metaTitle: "Datagedreven Boutique Makelaardij | Amsterdam at Home",
+  metaTitle: "Datagedreven Makelaardij | Amsterdam at Home",
   metaDescription:
     "De perfecte balans tussen menselijke aandacht en geavanceerde woningmarktcijfers. Ontdek onze unieke datagedreven aanpak voor de Amsterdamse woningmarkt.",
   slug: "datagedreven-makelaardij",
   keywords: [
     "datagedreven makelaar amsterdam",
-    "boutique makelaar amsterdam",
+    "makelaar amsterdam",
     "overbiedingsmonitor",
     "woningmarktcijfers amsterdam",
     "woningwaarde berekenen",
@@ -16,7 +16,7 @@ export const datagedrevenSeo: SeoData = {
 
 export const datagedrevenHeroData = {
   label: "Onze Aanpak",
-  title: "Datagedreven Boutique Makelaardij",
+  title: "Datagedreven Makelaardij",
   backgroundImage: "https://i.postimg.cc/dVcDNL2P/bigstock_Amsterdam_Sunset_City_Skyline_212181106.jpg",
   bgPositionClass: "bg-[center_30%]",
 };
@@ -24,7 +24,7 @@ export const datagedrevenHeroData = {
 export const datagedrevenIntroData = {
   heading: "De perfecte balans tussen menselijke aandacht en geavanceerde woningmarktcijfers",
   paragraphs: [
-    "Amsterdam At Home onderscheidt zich door een unieke combinatie: de persoonlijke, betrokken service van een boutique makelaar én de precisie van geavanceerde data-analyse. Voor zowel kopers als verkopers betekent dit één ding: geen onzekerheid, geen giswerk, maar inzicht, duidelijkheid en strategisch voordeel."
+    "Amsterdam At Home onderscheidt zich door een unieke combinatie: de persoonlijke, betrokken service van een makelaar én de precisie van geavanceerde data-analyse. Voor zowel kopers als verkopers betekent dit één ding: geen onzekerheid, geen giswerk, maar inzicht, duidelijkheid en strategisch voordeel."
   ],
   layoutVariant: "stacked" as const,
   centerHeading: true,
@@ -90,9 +90,9 @@ export const datagedrevenPointsData = {
     },
     {
       number: "7",
-      title: "Positionering: Boutique Makelaar met de kracht van data",
+      title: "Positionering: Makelaar met de kracht van data",
       paragraphs: [
-        "Amsterdam At Home is geen traditionele makelaar. Maar ook geen techbedrijf dat alleen op data stuurt. Het is een boutique makelaarskantoor dat:\n• kopers en verkopers kent bij naam,\n• hun verhalen begrijpt,\n• begeleiding biedt die persoonlijk, warm en betrokken is,",
+        "Amsterdam At Home is geen traditionele makelaar. Maar ook geen techbedrijf dat alleen op data stuurt. Het is een makelaarskantoor dat:\n• kopers en verkopers kent bij naam,\n• hun verhalen begrijpt,\n• begeleiding biedt die persoonlijk, warm en betrokken is,",
         "én tegelijkertijd:\n• beslissingen optimaliseert met hoogwaardige marktdata,\n• trends voorspelt voordat anderen ze zien,\n• zekerheid biedt in een vaak onvoorspelbare markt.",
         "Voor kopers betekent dit:\n• Je loopt nooit blind een bieding in\n• Je betaalt niet te veel\n• Je weet exact hoe jouw segment en buurt presteren\n• Je maakt een strategische keuze, ondersteund door data én een menselijk team",
         "Voor verkopers betekent dit:\n• Je woning wordt gepositioneerd met maximale finesse\n• Jouw vraagprijs is perfect onderbouwd\n• Je profiteert van datagedreven inzichten\n• Je haalt een maximale opbrengst, zonder onnodige risico's"
@@ -103,7 +103,7 @@ export const datagedrevenPointsData = {
       title: "Een geïntegreerde methode voor koper en verkoper",
       paragraphs: [
         "De Overbiedingsmonitor, het Dashboard, de Vraagprijsstrategie en de Calculator vormen samen één krachtig geheel:\nInzicht → Strategie → Zekerheid → Resultaat",
-        "Dat is precies waar Amsterdam At Home als boutique makelaar voor staat:\neen warme, menselijke ervaring gecombineerd met de meest intelligente data-aanpak van Amsterdam."
+        "Dat is precies waar Amsterdam At Home als makelaar voor staat:\neen warme, menselijke ervaring gecombineerd met de meest intelligente data-aanpak van Amsterdam."
       ]
     }
   ],

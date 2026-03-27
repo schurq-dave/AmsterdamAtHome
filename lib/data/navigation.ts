@@ -3,7 +3,7 @@ import type { NavigationData } from "@/lib/types";
 export const navigationData: NavigationData = {
   desktopLinks: [
     { label: "Datagedreven Makelaardij", href: "/datagedreven-makelaardij" },
-    { label: "Overbiedingen", href: "#datagedreven" },
+    { label: "Overbiedingen", href: "/overbiedingen" },
     { label: "Contact", href: "#contact", variant: "primary" },
   ],
   menuGroups: [
@@ -39,6 +39,7 @@ export const navigationData: NavigationData = {
         { label: "Woningwaarde berekenen", href: "/woningwaarde" },
         { label: "Woningmarkt Amsterdam", href: "/woningmarkt" },
         { label: "Miljoenenmarkt Amsterdam", href: "/miljoenenmarkt" },
+        { label: "Overbiedingen", href: "/overbiedingen" },
       ],
     },
   ],
