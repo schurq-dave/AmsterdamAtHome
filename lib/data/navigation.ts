@@ -2,15 +2,15 @@ import type { NavigationData } from "@/lib/types";
 
 export const navigationData: NavigationData = {
   desktopLinks: [
-    { label: "Datagedreven Makelaardij", href: "/datagedreven-makelaardij" },
-    { label: "Overbiedingen", href: "/overbiedingen" },
+    { label: "Werkwijze", href: "/werkwijze" },
+    { label: "Woningmarkt Amsterdam", href: "/woningmarkt" },
     { label: "Contact", href: "#contact", variant: "primary" },
   ],
   menuGroups: [
     {
       title: "Over ons",
       links: [
-        { label: "Datagedreven Makelaardij", href: "/datagedreven-makelaardij" },
+        { label: "Werkwijze", href: "/werkwijze" },
         { label: "Ons woningaanbod", href: "/aanbod" },
         { label: "Klanten vertellen", href: "/klanten-vertellen" },
         { label: "Blog", href: "/blog" },

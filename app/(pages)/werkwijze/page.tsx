@@ -17,7 +17,7 @@ import { DatagedrevenPoints } from "@/components/sections/datagedreven-points";
 
 export const metadata: Metadata = generatePageMetadata(datagedrevenSeo);
 
-export default function DatagedrevenMakelaardijPage() {
+export default function WerkwijzePage() {
   return (
     <>
       <JsonLd data={organizationJsonLd()} />

@@ -89,13 +89,13 @@ export function Header({
           </button>
         </div>
 
-        <div className="container mx-auto px-6 h-full flex flex-col justify-center relative z-10 pt-12 md:pt-0">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 h-[85vh] content-center">
+        <div className="container mx-auto px-6 h-full flex flex-col justify-start lg:justify-center relative z-10 pt-20 pb-10 lg:pt-0 overflow-y-auto custom-scrollbar">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 lg:h-[85vh] content-start lg:content-center">
             <div
-              className={`lg:col-span-4 flex flex-col justify-center space-y-10 border-r border-boutique-stone/60 pr-10 transition-all duration-500 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+              className={`lg:col-span-4 flex flex-col justify-start lg:justify-center space-y-8 lg:space-y-10 lg:border-r border-boutique-stone/60 lg:pr-10 transition-all duration-500 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
               style={{ transitionDelay: "100ms" }}
             >
-              <div className="relative border-b border-boutique-dark/20 pb-2 mb-4">
+              <div className="relative border-b border-boutique-dark/20 pb-2 mb-2 lg:mb-4">
                 <input
                   type="text"
                   placeholder="Zoeken..."
@@ -144,24 +144,24 @@ export function Header({
               className={`lg:col-span-8 flex flex-col h-full py-4 transition-all duration-500 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
               style={{ transitionDelay: "200ms" }}
             >
-              <div className="flex-1 flex flex-col justify-center">
-                <div className="flex items-center gap-3 mb-8">
+              <div className="flex-1 flex flex-col justify-start lg:justify-center">
+                <div className="flex items-center gap-3 mb-6 lg:mb-8">
                   <MapPin className="w-5 h-5 text-boutique-orange" />
                   <h3 className="font-sans font-bold text-sm uppercase tracking-[0.25em] text-boutique-beige">Alle Buurten</h3>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-3 font-sans text-sm text-gray-600 font-medium leading-relaxed">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-3 font-sans text-sm text-gray-600 font-medium leading-relaxed">
                   {menuNeighborhoods.map((n) => (
                     <a key={n.label} href={n.href} className="hover:text-boutique-orange transition-colors">{n.label}</a>
                   ))}
-                  <div className="col-span-2 md:col-span-4 mt-2">
+                  <div className="col-span-2 md:col-span-3 lg:col-span-4 mt-2">
                     {menuExtraNeighborhoods.map((n) => (
-                      <a key={n.label} href={n.href} className="hover:text-boutique-orange transition-colors mr-6">{n.label}</a>
+                      <a key={n.label} href={n.href} className="hover:text-boutique-orange transition-colors mr-6 inline-block mb-2">{n.label}</a>
                     ))}
                   </div>
                 </div>
               </div>
-              <div className="mt-4 flex justify-end items-end border-t border-boutique-stone/50 pt-8">
-                <div className="w-full max-w-lg h-20 md:h-24 overflow-hidden relative">
+              <div className="mt-8 lg:mt-4 flex justify-center lg:justify-end items-end border-t border-boutique-stone/50 pt-8 pb-12 lg:pb-0">
+                <div className="w-full max-w-xs lg:max-w-lg h-16 md:h-20 lg:h-24 overflow-hidden relative">
                   <img src={logo.src} alt={logo.alt} className="w-full h-full object-cover object-center opacity-90" />
                 </div>
               </div>

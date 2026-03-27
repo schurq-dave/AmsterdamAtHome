@@ -1,10 +1,10 @@
 import type { SeoData } from "@/lib/types";
 
 export const datagedrevenSeo: SeoData = {
-  metaTitle: "Datagedreven Makelaardij | Amsterdam at Home",
+  metaTitle: "Werkwijze | Amsterdam at Home",
   metaDescription:
     "De perfecte balans tussen menselijke aandacht en geavanceerde woningmarktcijfers. Ontdek onze unieke datagedreven aanpak voor de Amsterdamse woningmarkt.",
-  slug: "datagedreven-makelaardij",
+  slug: "werkwijze",
   keywords: [
     "datagedreven makelaar amsterdam",
     "makelaar amsterdam",
@@ -16,7 +16,7 @@ export const datagedrevenSeo: SeoData = {
 
 export const datagedrevenHeroData = {
   label: "Onze Aanpak",
-  title: "Datagedreven Makelaardij",
+  title: "Werkwijze",
   backgroundImage: "https://i.postimg.cc/dVcDNL2P/bigstock_Amsterdam_Sunset_City_Skyline_212181106.jpg",
   bgPositionClass: "bg-[center_30%]",
 };
